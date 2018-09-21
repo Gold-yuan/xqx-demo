@@ -1,5 +1,7 @@
 # 客户端集成
 
+[大众点评CAT Github地址](https://github.com/dianping/cat#quick-start)：https://github.com/dianping/cat
+
 **一般步骤**
 
 - 引包
@@ -27,6 +29,7 @@
 ```xml
 <config mode="client">
     <servers>
+        <!-- ip为cat服务器的ip，端口默认 -->
         <server ip="9.186.54.96" port="2280"/>
     </servers>
 </config>
@@ -34,13 +37,13 @@
 
 
 
-## 二、spring boot
+## 二、spring boot接入CAT
 
 ### 1、配置domain
 
-在资源文件中新建app.properties文件，在resources资源文件META-INF下，注意是src/main/resources/META-INF/文件夹， 而不是webapps下的那个META-INF,添加app.properties，加上domain配置，如：app.name=cat
+在资源文件中新建`app.properties`文件，在resources资源文件META-INF下，注意是`src/main/resources/META-INF/`文件夹， 而不是webapps下的那个META-INF,添加app.properties，加上domain配置，如：`app.name=cat22`
 
-> app.name=cat中的cat可自定义，访问时可直接搜索，下图中的cat是服务器自带的domain
+> app.name=cat22中的cat22可自定义，访问时可直接搜索，下图中的cat是服务器自带的domain
 >
 > ![image-20180920173632667](https://ws3.sinaimg.cn/large/006tNbRwly1fvg53rvqi7j317q07q0um.jpg)
 
@@ -129,7 +132,6 @@ try {
 } finally {
     t.complete();
 }
-return null;
 	
 ```
 
