@@ -1,0 +1,12 @@
+rootProject.name = 'xqx-demo-zipkin'
+
+include 'xqx-base'
+include 'xqx-gateway'
+include 'xqx-oauth'
+include 'xqx-user'
+include 'xqx-turbine'
+include 'xqx-hystrix-dashboard'
+include 'xqx-zipkin-server'
+
+
+
