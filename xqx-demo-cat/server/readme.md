@@ -25,7 +25,7 @@ http://unidal.org/nexus/service/local/repositories/releases/content/com/dianping
 
 ### 1、配置生产环境数据库
 
-自选或新建数据库，然后执行数据库脚本，在资源文件 scrip/Cat.sql。
+自选或新建数据库，然后执行数据库脚本，在资源文件 cat-init.sql。
 
 ### 2、准备N台cat服务器
 
@@ -188,4 +188,8 @@ http://unidal.org/nexus/service/local/repositories/releases/content/com/dianping
    <default-server id="10.1.1.3" port="2280" enable="true"/>
 </router-config>
 ```
+
+### 11、重启保证数据不丢
+请在tomcat重启之前调用当前tomcat的存储数据的链接 http://${ip}:8080/cat/r/home?op=checkpoint，重启之后数据会恢复。【注意重启时间在每小时的整点10-55分钟之间】
+线上部署时候，建议把此链接调用存放于tomcat的stop脚本中，这样不需要每次手工调用
 

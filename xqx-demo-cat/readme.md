@@ -2,6 +2,8 @@
 
 [大众点评CAT Github地址](https://github.com/dianping/cat#quick-start)：https://github.com/dianping/cat
 
+本项目访问：http://localhost:8079/cat
+服务端：http://9.186.54.96:9001/cat/r
 **一般步骤**
 
 - 引包
