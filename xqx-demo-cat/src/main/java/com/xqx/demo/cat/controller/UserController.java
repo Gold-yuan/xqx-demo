@@ -1,5 +1,7 @@
 package com.xqx.demo.cat.controller;
 
+import java.io.IOException;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,7 +17,11 @@ public class UserController {
 
 	@CatAnnotation
 	@RequestMapping(value = "/cataop")
-	public String catAop() {
+	public String catAop(String num) throws IOException {
+
+		if ("1".equals(num)) {
+			throw new IOException("自定义的异常");
+		}
 		return "ok";
 	}
 
