@@ -31,7 +31,7 @@ public class UserController {
 		String pageName = "pageName12";
 		String serverIp = "127.0.0.2";
 		double amount = 20;
-		Transaction t = Cat.newTransaction("URL2", pageName);
+		Transaction t = Cat.newTransaction("xqx-demo-cat", pageName);
 		try {
 			// 记录一个业务指标，记录支付金额
 			Cat.logMetricForSum("PayAmount12", amount);
