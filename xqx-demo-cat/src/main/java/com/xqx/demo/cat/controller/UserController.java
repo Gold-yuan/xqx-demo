@@ -45,7 +45,7 @@ public class UserController {
 			Cat.logMetricForCount("metric.key");
 			Cat.logMetricForCount("metric.key", 3);
 			Cat.logMetricForDuration("metric.key", 5);
-
+			System.out.println("==================----===");
 			t.addData("content2");
 			t.setStatus(Transaction.SUCCESS);
 			if ("1".equals("1")) {

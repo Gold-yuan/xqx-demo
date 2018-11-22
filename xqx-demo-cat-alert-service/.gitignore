@@ -1,0 +1,36 @@
+
+# Swa files
+*.swp
+*.swo
+
+# IDE related files
+.idea/
+.settings/
+*.iml
+*.resources.prefs
+
+# Compiled class file
+target
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# eclipse
+*.jar
+*.war
+bin/
+..gitig*
+.gradle/
+*.lock
+*.bin
+**/.gradle/

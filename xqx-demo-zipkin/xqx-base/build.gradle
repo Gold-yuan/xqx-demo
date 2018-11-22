@@ -1,4 +1,0 @@
-dependencies {
-	compile "org.springframework:spring-web:${springframeworkVersion}"
-}
-
